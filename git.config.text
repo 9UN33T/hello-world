@@ -1,0 +1,138 @@
+################## Git Config ################
+
+1. Set Git User Name
+* git config --global user.name Vinay
+
+2. Set git User Email
+* git config --global user.email codewithvj.com
+
+3. Check User and Email 
+* git config --global user.email
+* git config --global user.name
+
+4. Open VS code
+* code .
+
+5. inatlization git
+* git init
+
+6. Check folder internal file
+* ls -lart
+
+7. create new file
+* touch index.html
+
+8. check git status and check all activity
+* git status
+* git status -s
+
+9. track File  and track all file
+* git add index.html
+* git aad -A
+
+10. file commit to stage
+* git commit 
+* gti commit -m "Added more htmls"
+open editor - intial commit
+exit - wq
+
+11. Modifed file recover and recover all file
+* git checkout index.html (last commit match)
+* git checkout -f
+
+12. check log and check last commit
+* git log
+* git log -p-1 and type any number
+* use Q to quit
+
+13. check file update and error
+* git diff
+
+14. check file final staging area
+* git diff --staged
+
+15. Remove any File and remove cache  and remove commit
+* git rm index.html
+* git rm --cached index.html
+* git commit -a -m "Removing waste"
+ 
+16.  untrack file and log
+* create new file touch .gitignore
+* .gitignore define file Name
+*
+17. Create New Branch and check branch or switch branch
+* git branch feature1
+* git branch
+* git checkout feature1
+
+18.merge File
+* git merge feature1
+
+19. if you want create new branch and move this brance 
+* git checkout -b flaskintegration
+and check branch status
+
+20. remote Reporsitry
+ add remote URL xyz@github.com and enter
+
+21. Check Remote Status or name 
+* git remote
+*git remote -v
+
+22. git push branch file 
+* git push origin master
+
+23. Generating a new SSH key
+* $ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+#Enter a file in which to save the key (/c/Users/you/.ssh/id_algorithm):[Press enter]
+
+24. At the prompt, type a secure passphrase.
+*Enter passphrase (empty for no passphrase): [Type a passphrase]
+*Enter same passphrase again: [Type passphrase again]
+
+25. Checking for existing SSH keys
+* ls -al ~/.ssh
+
+26. Copy the SSH public key to your clipboard.
+* clip < ~/.ssh/id_ed25519.pub
+
+**********************************
+to generate rsa key
+*********************************
+
+27. $ ssh-keygen -t rsa -b 4096 -C "vinayjaiswal@myitronline.com"
+
+28. $ ls -al ~/.ssh
+
+29. $ eval "$(ssh-agent -s)"
+
+30. $ ssh-add ~/.ssh/id_rsa
+
+32. show SSH public key to your clipboard
+* cat ~/.ssh/id_rsa.pub
+
+# Copies the contents of the id_ed25519.pub file to your clipboard
+
+
+***********************************************************************
+Quick setup — if you’ve done this kind of thing before
+or	
+https://github.com/Myitronline-IT/v.2.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# v.2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Myitronline-IT/v.2.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/Myitronline-IT/v.2.git
+git branch -M main
+git push -u origin main
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
